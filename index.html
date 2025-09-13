@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PharmaOverseas</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f9f9f9;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  } 
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  header {
+    background-color: #2a2a72;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .site-name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #ffcc00;
+  }
+  
+  .sign-in-btn {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #2a2a72;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: white;
+  }
+  .hero {
+    padding-top: 120px;
+    background-color: white;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    color: #2a2a72;
+  }
+  
+  .hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .hero-buttons .btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn.primary {
+    background-color: #113068;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: #113068;
+    color: #fff;
+  }
+  
+  .btn.primary:hover {
+    background-color: #ffcc00;
+  }
+  
+  .btn.secondary:hover {
+    background-color: #ffcc00;
+  }
+  
+  .hero-img {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .certification {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  .cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .cert-img-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px;
+  }
+  .cert-img-wrapper img{
+    float: left;
+    width: 600px;
+    height: 700px;
+  }
+  .cert-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .cert-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: 90px;
+  }
+  
+  .cert-text h2 {
+    color: #0c2e60;
+    margin-bottom: 15px;
+  }
+  
+  .cert-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .cert-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cert-text li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #0c2e60;
+  }
+  
+  .cert-text i {
+    color: #0050c9;
+    margin-right: 10px;
+  }
+  footer {
+    background-color: #2a2a72;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .cert-text,
+.cert-img-wrapper,
+.hero-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button click effect */
+.btn.clicked {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo-area">
+        <span class="site-name">PharmaOverseas</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index4.html">Services</a>
+        <a href="Index2.html">About</a>
+      </nav>
+      <a href="index3.html" class="sign-in-btn">Log In</a>
+    </div>
+  </header>  
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Leading Pharmaceutical Distributor in Egypt</h1>
+        <p>Delivering quality products and services with care, integrity, and innovation.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">Explore More</a>
+          <a href="#" class="btn secondary">Contact Us</a>
+        </div>
+      </div>
+      <img src="img\Future.webp"/>
+    </div>
+  </section>
+<section class="certification">
+    <div class="container cert-container">
+      <div class="cert-img-wrapper">
+        <img src="img\2.webp"/>
+      </div>
+      <div class="cert-text">
+        <h2>Certified by SGS</h2>
+        <p>
+          We have continuously developed our services, listened to your suggestions and considered your opinions.
+          This is because we believe that the health and safety of the patient is our shared responsibility.
+        </p>
+        <p>
+          Today, that journey is crowned with the ISO 9001 and 45001 certificates from SGS Switzerland —
+          the world's leading inspection, testing, and certification company. It provides its services through
+          more than 100,000 employees working in 2,700 offices in over 140 countries around the world.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-award"></i> ISO 9001: Quality Management Systems</li>
+          <li><i class="fa-solid fa-award"></i> ISO 45001: Health & Safety Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer-container">
+      <p>@ 2025 PharmaOverseas. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target && target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+const revealElements = document.querySelectorAll('.hero-text, .certification, .cert-text, .cert-img-wrapper');
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  revealElements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      el.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+const heroTitle = document.querySelector('.hero-text h1');
+const originalText = heroTitle.textContent;
+heroTitle.textContent = "";
+
+let index = 0;
+const typeEffect = () => {
+  if (index < originalText.length) {
+    heroTitle.textContent += originalText.charAt(index);
+    index++;
+    setTimeout(typeEffect, 60);
+  }
+};
+window.addEventListener('load', typeEffect);
+
+document.querySelectorAll('.btn').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.add('clicked');
+    setTimeout(() => button.classList.remove('clicked'), 300);
+  });
+});
+  </script>
+</body>
+</html>
